@@ -5,15 +5,20 @@ gem 'sqlite3'
 gem 'activeadmin', :git => 'https://github.com/gregbell/active_admin.git'
 gem 'meta_search'
 gem 'haml-rails'
-gem 'carrierwave'
 gem 'mini_magick'
 gem 'ckeditor'
 gem 'acts-as-taggable-on', '~> 2.3.1'
+
+# used for uploads
 gem 'carrierwave'
 gem 'rmagick'
 gem 'fog'
 gem 'carrierwave_direct'
 gem 'sidekiq'
+
+# provide microdata
+gem "green_monkey", '0.1.2'
+gem 'chronic_duration', git: 'git://github.com/Paxa/chronic_duration.git', ref: '8c0d0e101b'
 
 # dev and test
 group :development, :test do 
