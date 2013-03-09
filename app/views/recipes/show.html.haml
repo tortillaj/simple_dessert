@@ -1,0 +1,10 @@
+- provide :title, @recipe.title
+
+%h1= @recipe.title
+
+%div= raw(@recipe.instructions)
+
+
+= link_to 'Edit', edit_recipe_path(@recipe)
+\|
+= link_to 'Back', recipes_path
